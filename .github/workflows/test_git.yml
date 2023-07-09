@@ -8,6 +8,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Checkout repository and submodules
+        uses: actions/checkout@v2
+        with:
+          submodules: recursive
+          
       - name: Append 'hello' to CookHistory.json
         run: echo "hello" >> CookHistory.json
       
