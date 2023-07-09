@@ -1,9 +1,7 @@
 name: Auto Commit
 
 on:
-  push:
-    branches:
-      - main
+  workflow_dispatch:
 
 jobs:
   auto_commit:
